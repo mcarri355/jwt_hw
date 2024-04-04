@@ -22,7 +22,7 @@ var session = await getSession()
     </nav>
     <br />
     <div>
-      <h1>Welcome, {session.user.name}</h1>
+      <h1>Hola, {session.user.name}</h1>
       <br />
       <h2>Your Email: {session.user.email}</h2>
       <br />
