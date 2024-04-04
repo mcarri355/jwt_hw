@@ -12,7 +12,7 @@ const Home = () => {
             <h1><Link href='/home'>Go Home</Link></h1>
           </li>
           <li>
-            <h1><Link href='/user'>Go Profile</Link></h1></li>
+            <h1><Link href='/user'>User Info</Link></h1></li>
           <li>
             <form action={async(formdata) =>{
               'use server' 

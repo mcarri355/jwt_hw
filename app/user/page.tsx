@@ -7,11 +7,11 @@ import {redirect} from "next/navigation";
 const profile = async () => {
 var session = await getSession()
   return (
-    <div>
+    <>
       <nav>
       <ul>
         <li><h1><Link href='/home'>Home</Link></h1></li>
-        <li><h1><Link href='/user'>Profile</Link></h1></li>
+        <li><h1><Link href='/user'>User Info</Link></h1></li>
         <li><form action={
         async(formdata) =>{
           'use server' 
@@ -20,14 +20,15 @@ var session = await getSession()
         }}><button type='submit'>Logout</button></form></li>
       </ul>
     </nav>
-
+    <br />
+    <div>
       <h1>Welcome, {session.user.name}</h1>
-      <h1>EMAIL</h1>
-      <h2>{session.user.email}</h2>
-      <h1>PASSWORD</h1>
-      <h2>{session.user.password}</h2>
-
+      <br />
+      <h2>Your Email: {session.user.email}</h2>
+      <br />
+      <h2>Your Password: {session.user.password}</h2>
     </div>
+    </>
   )
 }
 
