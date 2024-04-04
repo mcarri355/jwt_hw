@@ -11,7 +11,7 @@ var session = await getSession()
       <nav>
       <ul>
         <li><h1><Link href='/home'>Home</Link></h1></li>
-        <li><h1><Link href='/profile'>Profile</Link></h1></li>
+        <li><h1><Link href='/user'>Profile</Link></h1></li>
         <li><form action={
         async(formdata) =>{
           'use server' 

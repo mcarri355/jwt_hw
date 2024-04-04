@@ -5,13 +5,14 @@ import {logout} from '../lib'
 const Home = () => {
   return (
     <div>
+      <h1>This The Home Page</h1>
       <nav>
         <ul>
           <li>
-            <h1><Link href='/home'>Home</Link></h1>
+            <h1><Link href='/home'>Go Home</Link></h1>
           </li>
           <li>
-            <h1><Link href='/profile'>Profile</Link></h1></li>
+            <h1><Link href='/user'>Go Profile</Link></h1></li>
           <li>
             <form action={async(formdata) =>{
               'use server' 
@@ -23,7 +24,7 @@ const Home = () => {
           </li>
         </ul>
       </nav>
-    <h1>Home Page</h1>
+    
     </div>
   )
 }
